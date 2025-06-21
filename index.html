@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>La Más Hermosa de Todas 🤎🤍</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #ffe6f0, #e0f7fa);
+      color: #333;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    header {
+      background-color: #f06292;
+      color: white;
+      padding: 20px 0;
+      font-size: 2em;
+      font-weight: bold;
+    }
+    .page {
+      display: none;
+      padding: 20px;
+    }
+    .page.active {
+      display: block;
+    }
+    img {
+      max-width: 300px;
+      border-radius: 20px;
+      margin-top: 20px;
+    }
+    nav {
+      margin: 20px;
+    }
+    button {
+      background-color: #f06292;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      margin: 5px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 1em;
+    }
+    button:hover {
+      background-color: #ec407a;
+    }
+    .poema {
+      font-style: italic;
+      margin-top: 10px;
+      color: #6a1b9a;
+    }
+  </style>
+</head>
+<body>
+  <header>La Más Hermosa de Todas 🤎🤍</header>
+  <nav>
+    <button onclick="showPage(0)">Página 1</button>
+    <button onclick="showPage(1)">Página 2</button>
+    <button onclick="showPage(2)">Página 3</button>
+    <button onclick="showPage(3)">Página 4</button>
+    <button onclick="showPage(4)">Página 5</button>
+    <button onclick="showPage(5)">Página 6</button>
+  </nav>
+
+  <div class="page active">
+    <h2>Su sonrisa ilumina cualquier lugar</h2>
+    <img src="1.jpeg" alt="Foto 1">
+    <p>Ella tiene una sonrisa que alegra el alma, y una mirada que transmite paz.</p>
+    <p class="poema">Eres mi razón de ser, la luz que guía cada paso que doy.</p>
+  </div>
+
+  <div class="page">
+    <h2>Naturalmente hermosa</h2>
+    <img src="2.jpeg" alt="Foto 2">
+    <p>En cualquier lugar del mundo, su belleza resalta de forma única.</p>
+    <p class="poema">Cada latido de mi corazón te nombra, cada suspiro te recuerda.</p>
+  </div>
+
+  <div class="page">
+    <h2>Una ternura infinita</h2>
+    <img src="3.jpeg" alt="Foto 3">
+    <p>Su forma de ser refleja dulzura y sinceridad, cualidades que la hacen inolvidable.</p>
+    <p class="poema">Tú eres mi poema favorito, escrito con caricias y ternura.</p>
+  </div>
+
+  <div class="page">
+    <h2>Auténtica y encantadora</h2>
+    <img src="4.jpeg" alt="Foto 4">
+    <p>Ella no necesita filtros ni adornos. Su esencia brilla por sí sola.</p>
+    <p class="poema">Contigo la vida es arte, y cada día es una obra maestra.</p>
+  </div>
+
+  <div class="page">
+    <h2>Con el corazón en sus manos</h2>
+    <img src="5.jpeg" alt="Foto 5">
+    <p>Sus gestos hablan de cariño, entrega y conexión verdadera.</p>
+    <p class="poema">Tomar tu mano es sostener el universo, mirar tus ojos es perderse en el amor.</p>
+  </div>
+
+  <div class="page">
+    <h2>Siempre llena de luz</h2>
+    <img src="6.jpeg" alt="Foto 6">
+    <p>Camina con seguridad, transmite alegría y deja huellas imborrables.</p>
+    <p class="poema">Eres mi cielo favorito, mi canción eterna, mi amor sin final.</p>
+  </div>
+
+  <script>
+    const pages = document.querySelectorAll('.page');
+    function showPage(index) {
+      pages.forEach((page, i) => {
+        page.classList.toggle('active', i === index);
+      });
+    }
+  </script>
+</body>
+</html>
